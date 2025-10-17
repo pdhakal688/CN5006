@@ -1,12 +1,12 @@
 console.log("hello, world");
-const num1 = 5;
-const num2 = 3;
+// const num1 = 5;
+// const num2 = 3;
 
-// add two numbers
-const sum = num1 + num2;
+// // add two numbers
+// const sum = num1 + num2;
 
-// display the sum
-console.log('The sum of ' + num1 + ' and ' + num2 + ' is: ' + sum);
+// // display the sum
+// console.log('The sum of ' + num1 + ' and ' + num2 + ' is: ' + sum);
 
 const prompt = require(`prompt-sync`)();
 console.log("starting")
@@ -25,4 +25,25 @@ else if (number = 0) {
 
 else {
     console.log("The number is negative");
+}
+
+const num1 = parseInt(prompt("Enter first number: "));
+const num2 = parseInt(prompt("Enter second number: "));
+
+const operation = prompt("Enter your operation: ");
+
+if (operation == "+"){
+    console.log(num1 + num2);
+}
+
+else if (operation == "-"){
+    console.log(num1 - num2);
+}
+
+else if (operation=="*"){
+    console.log(num1*num2);
+}
+
+else if (operation=="/") {
+    console.log(num1/num2);
 }
